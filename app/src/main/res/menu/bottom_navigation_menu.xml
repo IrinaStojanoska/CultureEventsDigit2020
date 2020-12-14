@@ -4,15 +4,20 @@
         android:id="@+id/home"
         android:enabled="true"
         android:icon="@mipmap/home"
-        android:title="@string/home"/>
+        android:title="@string/home" />
+    <item
+        android:id="@+id/calendar"
+        android:enabled="true"
+        android:icon="@mipmap/calendar"
+        android:title="@string/calendar" />
     <item
         android:id="@+id/profile"
         android:enabled="true"
         android:icon="@mipmap/user"
-        android:title="@string/profile"/>
+        android:title="@string/profile" />
     <item
         android:id="@+id/random"
         android:enabled="true"
         android:icon="@mipmap/home"
-        android:title="@string/random"/>
+        android:title="@string/random" />
 </menu>

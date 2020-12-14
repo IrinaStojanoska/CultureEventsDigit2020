@@ -3,4 +3,7 @@
     <string name="home">home</string>
     <string name="profile">profile</string>
     <string name="random">random</string>
+    <string name="calendar">calendar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

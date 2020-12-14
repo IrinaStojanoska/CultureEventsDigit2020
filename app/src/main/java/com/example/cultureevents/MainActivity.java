@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
                     if (id == R.id.home) {
                       //  selectedFragment = new HomeFragment();
                     }
-                    if (id == R.id.profile) {
-                      //  selectedFragment = new FavouritesFragment();
+                    if (id == R.id.calendar) {
+                        selectedFragment = new CalendarFragment();
                     }
                     if (id == R.id.random) {
 
                       //  selectedFragment = new FastingPlansFragment();
                     }
-
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                     return true;
                 }
 
