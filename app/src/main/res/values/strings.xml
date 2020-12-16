@@ -3,4 +3,8 @@
     <string name="home">home</string>
     <string name="profile">profile</string>
     <string name="random">random</string>
+    <string name="facebook_app_id">714354072541536</string>
+    <string name="fb_login_protocol_scheme">fb714354072541536</string>
+
+
 </resources>

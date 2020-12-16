@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "352971686657",
+    "project_id": "cultureevents-a6f75",
+    "storage_bucket": "cultureevents-a6f75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352971686657:android:c452a9ef9cbd205942d100",
+        "android_client_info": {
+          "package_name": "com.example.cultureevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352971686657-l2lqa3upp3b8ccipo9jg7jltu2h554d0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9o8PlOIAUYy8upGJ-3Z_Gj_3SbXtBXFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352971686657-l2lqa3upp3b8ccipo9jg7jltu2h554d0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
