@@ -10,6 +10,8 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(navigationListener);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new NewsFeedFragment()).commit();
+
 
     }
 
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
                     int id = menuItem.getItemId();
                     if (id == R.id.home) {
-                      //  selectedFragment = new HomeFragment();
+                        selectedFragment = new NewsFeedFragment();
                     }
                     if (id == R.id.calendar) {
                         selectedFragment = new CalendarFragment();
