@@ -30,7 +30,7 @@ public class NewEvent extends AppCompatActivity implements View.OnClickListener 
     FormInputText name;
     FormInputMultiline description;
     FormInputAutoComplete location;
-    FormInputAutoComplete category;
+
     Switch switchTickets;
     Button saveBtn;
 
@@ -51,11 +51,10 @@ public class NewEvent extends AppCompatActivity implements View.OnClickListener 
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
 
-        // saveBtn=findViewById(R.id.save);
+
         name = findViewById(R.id.nameField);
         description = findViewById(R.id.descriptionField);
         location = findViewById(R.id.locationField);
-        category = findViewById(R.id.categoryField);
         switchTickets=findViewById(R.id.simpleSwitch);
         saveBtn = findViewById(R.id.save);
         saveBtn.setOnClickListener(new View.OnClickListener() {
@@ -66,12 +65,12 @@ public class NewEvent extends AppCompatActivity implements View.OnClickListener 
                 String eventName = name.getValue();
                 String eventDescription = description.getValue();
                 String eventLocation = location.getValue();
-                String categegory= category.getValue();
                 String time = txtTime.getText().toString();
                 String date = txtDate.getText().toString();
                 Boolean needTicket=switchTickets.getShowText();
                 String image="";
-                event = new Event(eventName, eventDescription, eventLocation, date, time, image, categegory, needTicket);
+                String creationDate= String.valueOf(java.time.LocalDate.now());
+                event = new Event(eventName, eventDescription, eventLocation, date, time,creationDate, image,needTicket);
                 ref.child(eventName).setValue(event);
                 finish();
             }

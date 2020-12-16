@@ -7,20 +7,21 @@ public class Event {
     String date;
     String time;
     String image;
-    String category;
+    String creationDate;
     Boolean neededTicket;
 
     public Event() {
     }
 
-    public Event(String name, String description, String location, String date, String time, String image, String category, Boolean neededTicket) {
+
+    public Event(String name, String description, String location, String date, String time, String creationDate, String image, Boolean neededTicket) {
         this.name = name;
         this.description = description;
         this.location = location;
         this.date = date;
         this.time=time;
         this.image=image;
-        this.category = category;
+        this.creationDate=creationDate;
         this.neededTicket = neededTicket;
     }
 
@@ -48,8 +49,8 @@ public class Event {
         return date;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCreationDate() {
+        return creationDate;
     }
 
     public Boolean getNeededTicket() {
