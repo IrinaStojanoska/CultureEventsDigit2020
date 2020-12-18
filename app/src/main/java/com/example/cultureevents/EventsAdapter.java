@@ -37,9 +37,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.MyViewHold
             LayoutInflater inflater=LayoutInflater.from(parent.getContext());
             View view=inflater.inflate(R.layout.eventcard, null);
 
-
-
-
             return new EventsAdapter.MyViewHolder(view);
         }
 
@@ -68,22 +65,9 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.MyViewHold
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
                 title=itemView.findViewById(R.id.eventName);
-
                 date=itemView.findViewById(R.id.eventDate);
                 time=itemView.findViewById(R.id.eventTime);
                 description=itemView.findViewById(R.id.eventDescription);
-//                fastingCard=itemView.findViewById(R.id.fastingCard);
-//                fastingCard.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        int position=getAdapterPosition();
-//                        Intent intent= new Intent(context, OpenFastingPlan.class);
-//                        intent.putExtra("title",titles[position] );
-//                        intent.putExtra("position",position );
-//                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                        context.startActivity(intent);
-//                    }
-//                });
 
 
             }

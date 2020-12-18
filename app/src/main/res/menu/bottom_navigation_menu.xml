@@ -3,21 +3,19 @@
     <item
         android:id="@+id/home"
         android:enabled="true"
-        android:icon="@mipmap/home"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/white"
         android:title="@string/home" />
     <item
         android:id="@+id/calendar"
         android:enabled="true"
-        android:icon="@mipmap/calendar"
+        android:icon="@drawable/ic_calendar"
+        android:iconTint="@color/white"
         android:title="@string/calendar" />
     <item
         android:id="@+id/profile"
         android:enabled="true"
-        android:icon="@mipmap/user"
+        android:icon="@drawable/ic_user"
         android:title="@string/profile" />
-    <item
-        android:id="@+id/random"
-        android:enabled="true"
-        android:icon="@mipmap/home"
-        android:title="@string/random" />
+
 </menu>

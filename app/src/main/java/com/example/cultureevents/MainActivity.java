@@ -42,9 +42,8 @@ public class MainActivity extends AppCompatActivity {
                     if (id == R.id.calendar) {
                         selectedFragment = new CalendarFragment();
                     }
-                    if (id == R.id.random) {
-
-                      //  selectedFragment = new FastingPlansFragment();
+                    if (id == R.id.profile) {
+                        selectedFragment = new UserFragment();
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                     return true;

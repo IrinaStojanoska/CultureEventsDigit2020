@@ -123,7 +123,7 @@
         android:textOn="Да"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:theme="@style/SwitchTheme"
+
         />
 </RelativeLayout>
         <Button
